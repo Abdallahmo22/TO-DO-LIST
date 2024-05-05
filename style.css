@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    background-color: #45a1a7;
+}  
+.name{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size: 50px;
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid silver;
+}
+
+input[type="text"] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fff4f4;
+}
+
+#addButton {
+    width: 11%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s;
+}
+#addButton:hover{
+    background-color: black;
+    color: white;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex; /* إعداد عرض عناصر القائمة لترتيب العناصر بجانب بعضها */
+    justify-content: space-between; /* توزيع الفراغ بين العناصر والأزرار بالتساوي */
+    align-items: center; /* محاذاة العناصر والأزرار عموديا */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+#taskList li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
